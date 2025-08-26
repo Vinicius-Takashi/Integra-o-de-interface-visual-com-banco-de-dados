@@ -10,11 +10,11 @@ public class ConexãoBD {
 
     }
     public Connection conectar() throws SQLException {
-        String servidor = "projetolp1-projetolp1.g.aivencloud.com";
-        String porta = "20883";
-        String database = "projeto";
-        String usuario = "avnadmin";
-        String senha = "AVNS_OIAUWhmXs-mkcMMuTfR";
+        String servidor = "";
+        String porta = "";
+        String database = "";
+        String usuario = "";
+        String senha = "";
         return DriverManager.getConnection(
             "jdbc:mysql://" + servidor + ":" + porta + "/" + database +
             "?user=" + usuario +
