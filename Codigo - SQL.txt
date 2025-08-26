@@ -1,0 +1,29 @@
+Criação do database
+------------------------------------
+create database projeto
+------------------------------------
+Criação da tabela de Usuário
+------------------------------------
+use projeto;
+create table tb_logins(
+id smallint auto_increment not null,
+usuario varchar(30) not null,
+senha varchar(30) not null,
+primary key(id))
+engine=InnoDB
+------------------------------------
+Criação da tabela de produtos
+------------------------------------
+use projeto;
+Create table produto(
+id smallint auto_increment not null,
+nome varchar(100) not null,
+marca varchar (50) not null,
+quantidade smallint not null,
+preco decimal(10,2) not null,
+UnidadeMedida varchar (20) not null,
+categoria varchar (50) not null,
+localização varchar (50) not null,
+primary key (id))
+engine = InnoDB
+------------------------------------
